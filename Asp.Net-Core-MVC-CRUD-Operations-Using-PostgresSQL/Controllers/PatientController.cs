@@ -101,7 +101,7 @@ namespace Asp.Net_Core_MVC_CRUD_Operations_Using_PostgresSQL.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FristName,LastName,Address,DoctorId,AppointmentDate")] PatientRecordViewModel patientRecordViewModel)
+        public async Task<IActionResult> Create([Bind("Id,FristName,LastName,Address,DoctorId,AppointmentDate,NickName")] PatientRecordViewModel patientRecordViewModel)
         {
             if (ModelState.IsValid)
             {
