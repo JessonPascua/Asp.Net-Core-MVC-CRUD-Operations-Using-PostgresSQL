@@ -10,5 +10,8 @@
         public int DoctorId { get; set; }
         public string? Type { get; set; }
         public DateTime AppointmentDate { get; set; }
+
+        public string? NickName { get; set; }
+
     }
 }
